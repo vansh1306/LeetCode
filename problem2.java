@@ -13,7 +13,7 @@ class Solution {
           carry += l2.val;
           l2 = l2.next;
         }
-        curr.next = new ListNode(carry % 10);
+        curr.next = new ListNode(carry % 10);  
         carry /= 10;
         curr = curr.next;
       }

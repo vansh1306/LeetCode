@@ -1,4 +1,4 @@
- class Solution {
+class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
       ListNode dummy = new ListNode(0);
       ListNode curr = dummy;
@@ -13,7 +13,7 @@
           carry += l2.val;
           l2 = l2.next;
         }
-        curr.next = new ListNode(carry % 1 0);  
+        curr.next = new ListNode(carry % 10);  
         carry /= 10;
         curr = curr.next;
       }

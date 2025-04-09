@@ -5,7 +5,7 @@ class Solution {
       int carry = 0;
   
       while (l1 != null || l2 != null || carry > 0) {
-        if (l1 != null) {
+        if (l1 != null) { 
           carry += l1.val;
           l1 = l1.next;
         }
